@@ -1,0 +1,47 @@
+:root {
+    --color-primario: #1f6feb;
+    --color-texto: #1f2328;
+    --color-borde: #d0d7de;
+    --color-fondo: #f6f8fa;
+    --color-error: #cf222e;
+    --color-ok: #1a7f37;
+    --color-alerta: #fff8c5;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--color-texto); background: var(--color-fondo); }
+.topbar { display: flex; align-items: center; gap: 24px; padding: 12px 24px; background: #fff; border-bottom: 1px solid var(--color-borde); }
+.topbar nav { flex: 1; }
+.topbar nav a { margin-right: 16px; text-decoration: none; color: var(--color-primario); font-weight: 600; }
+.usuario { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+.contenedor { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+.encabezado { display: flex; justify-content: space-between; align-items: center; }
+h1 { margin: 0 0 16px; font-size: 24px; }
+
+.btn { display: inline-block; padding: 8px 16px; border: 0; border-radius: 6px; background: var(--color-primario); color: #fff; font-size: 14px; cursor: pointer; text-decoration: none; }
+.btn-secundario { background: #fff; color: var(--color-texto); border: 1px solid var(--color-borde); }
+.link-peligro { background: none; border: 0; color: var(--color-error); cursor: pointer; padding: 0; font-size: 14px; }
+
+.alerta { padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; border: 1px solid var(--color-borde); background: #fff; }
+.alerta-error { border-color: var(--color-error); color: var(--color-error); }
+.alerta-ok { border-color: var(--color-ok); color: var(--color-ok); }
+.alerta ul { margin: 0; padding-left: 20px; }
+
+.formulario { display: grid; gap: 14px; max-width: 520px; background: #fff; padding: 20px; border: 1px solid var(--color-borde); border-radius: 8px; }
+.formulario label { display: grid; gap: 4px; font-size: 14px; font-weight: 600; }
+.formulario input[type=text], .formulario input[type=email], .formulario input[type=password],
+.formulario input[type=number], .formulario select { padding: 8px; border: 1px solid var(--color-borde); border-radius: 6px; font-size: 14px; }
+.formulario .check { display: flex; align-items: center; gap: 8px; font-weight: 400; }
+.acciones { display: flex; gap: 8px; }
+.login { max-width: 380px; margin: 60px auto; }
+
+.busqueda { display: flex; gap: 8px; margin-bottom: 16px; }
+.busqueda input { flex: 1; padding: 8px; border: 1px solid var(--color-borde); border-radius: 6px; }
+.tabla-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--color-borde); border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--color-borde); }
+th.num, td.num { text-align: right; }
+tr.stock-critico { background: var(--color-alerta); }
+.acciones-fila { display: flex; gap: 12px; align-items: center; justify-content: flex-end; }
+.acciones-fila form { margin: 0; }
+.vacio { text-align: center; color: #656d76; padding: 24px; }
+.nota { font-size: 13px; color: #656d76; }

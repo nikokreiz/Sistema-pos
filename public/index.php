@@ -1,3 +1,3 @@
 <?php
-// Punto de entrada. La lógica va en src/ (server-side).
-echo 'Sistema POS - en construcción';
+require __DIR__ . '/../src/bootstrap.php';
+redirigir(usuario_actual() ? '/productos/' : '/login.php');
