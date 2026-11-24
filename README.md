@@ -7,7 +7,7 @@ Permitir el control de inventario y la venta de artículos, cumpliendo la normat
 
 ## Stack
 - PHP (lógica del lado del servidor)
-- MySQL / MariaDB
+- PostgreSQL
 - HTML + CSS en archivos externos (`public/css`)
 
 ## Estructura
